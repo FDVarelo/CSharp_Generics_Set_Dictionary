@@ -2,7 +2,7 @@
 {
     class ServicoImprimir<T>
     {
-        private T[] _valores = new T[0];
+        private T[] _valores = new T[10];
         private int _contador = 0;
 
         public void AddValor(T valor)
