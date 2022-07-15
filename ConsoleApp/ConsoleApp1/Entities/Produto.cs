@@ -23,5 +23,12 @@ namespace ConsoleApp1.Entities
             Produto produto = obj as Produto;
             return Preco.CompareTo(produto.Preco);
         }
+
+        public override string ToString()
+        {
+            return Nome
+                + ", "
+                + Preco.ToString("F2", CultureInfo.InvariantCulture);
+        }
     }
 }
