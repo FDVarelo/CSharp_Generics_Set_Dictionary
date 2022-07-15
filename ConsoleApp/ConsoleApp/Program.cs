@@ -10,6 +10,12 @@ namespace ConsoleApp
 
             Console.Write("Quantos valores serão passados? ");
             int valores = int.Parse(Console.ReadLine());
+            while(valores > 10 || valores < 1)
+            {
+                Console.WriteLine("\nQuantidade de valores não suportada! [1 até 10] apenas.\n");
+                Console.Write("Quantos valores serão passados? ");
+                valores = int.Parse(Console.ReadLine());
+            }
 
             for(int i = 0; i < valores; i++)
             {
