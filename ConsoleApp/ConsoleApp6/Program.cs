@@ -27,7 +27,7 @@ namespace ConsolaApp6
                 B.Add(student);
             }
 
-            Console.Write("How many students in course B? > ");
+            Console.Write("How many students in course C? > ");
             n = int.Parse(Console.ReadLine());
             for (int i = 0; i < n; i++)
             {
